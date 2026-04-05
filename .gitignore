@@ -1,0 +1,59 @@
+# Build artifacts
+build/
+dist/
+CMakeCache.txt
+CMakeFiles/
+*.o
+*.obj
+*.lib
+*.exp
+*.pdb
+
+# Release directory is tracked, but generated outputs are not
+!release/
+release/*.log
+release/*.tmp
+release/found_seeds_*.csv
+release/file_list_*.txt
+release/target_list_*.txt
+release/search_report_*.json
+
+# Build-time dependencies (statically linked into exe)
+lib/
+include/
+
+# GUI assets (embedded by PyInstaller at build time)
+assets/
+images/
+
+# Documentation, debug tools, test data
+doc/
+debug/
+test/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Files generated at runtime
+found_seeds_*.csv
+file_list_*.txt
+target_list_*.txt
+benchmark_*.json
+search_report_*.json
+release/*.exe
+*.log
+*.tmp
+
+# PyInstaller spec files
+*.spec
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
