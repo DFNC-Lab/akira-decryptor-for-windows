@@ -38,7 +38,7 @@ Run this on the **infected PC**. It reads the Akira ransom note timestamp and Wi
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/427e133c-5f64-4f31-bef8-3078274cb123" width="80%" alt="Step 1 — QPC Estimation">
+  <img src="https://github.com/user-attachments/assets/52bb2a9d-7f0b-47ee-8c14-2f15644869cd" width="80%" alt="Step 1 — QPC Estimation">
 </p>
 
 ```
@@ -55,8 +55,9 @@ Step1_QPCEstimator.exe [--log <path>] [--tz <offset>]
 Searches for the encryption seeds using GPU brute-force. For each `.akira` file, it tries candidate QPC values and verifies them against the file's known header bytes. Results are saved to `found_seeds_*.csv`.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d85c45df-12ec-46c3-8b00-8ca51a8e0ddb" width="80%" alt="Step 2 — Seed Recovery">
+  <img src="https://github.com/user-attachments/assets/5baa7f25-cb47-409c-99c2-dcd580f22a55" width="80%" alt="Step 2 — Seed Recovery">
 </p>
+
 
 ```
 Step2_SeedScanner.exe <root_path> <timestamp> <ref_qpc>
@@ -76,7 +77,7 @@ Step2_SeedScanner.exe <root_path> <timestamp> <ref_qpc>
 Restores the original files using the recovered seeds. Automatically detects the encryption mode (full, half, or partial) from the `.akira` footer. Decrypted files are written next to the originals with the `.akira` extension removed.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/591eaf4b-5c3a-4f13-ab49-8511eef377be" width="80%" alt="Step 3 — Decryption">
+  <img src="https://github.com/user-attachments/assets/330ceeaf-ba3b-41a5-80ab-bdbcfbf95ccd" width="80%" alt="Step 3 — Decryption">
 </p>
 
 ```
