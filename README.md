@@ -107,6 +107,20 @@ A: It depends on your GPU and how many files were encrypted. On an RTX 4060, eac
 **Q: Which files can be recovered?**
 A: Any `.akira` file whose original format is one of the 12 supported types (PNG, JPEG, PDF, ZIP, DOCX, XLSX, PPTX, DOC, XLS, PPT, HWP, SQLite). These formats have known file headers that allow the tool to verify when the correct key is found.
 
+## Citation
+
+If you use this project or its methodology in your research, please cite:
+
+```text
+Donghwoo Cho, Uk Hur, Changhoon Lee, and Jongsung Kim,
+"A Study on High-Speed Brute-Force for Decryption of Akira Ransomware
+through GPU Parallel Processing and Precomputation in Windows,"
+Journal of the Korea Institute of Information Security & Cryptology,
+vol. 36, no. 4, pp. 1263-1279, 2026.
+```
+
+**DOI:** [https://doi.org/10.13089/JKIISC.2026.36.4.1263](https://doi.org/10.13089/JKIISC.2026.36.4.1263)
+
 ## License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
